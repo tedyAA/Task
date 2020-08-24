@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+       Task Manager
+      </a>
+    </nav>
+    <tasks/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Tasks from './components/Tasks.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Tasks
   }
 }
 </script>
@@ -23,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
